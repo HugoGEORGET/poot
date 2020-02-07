@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 const App = () => {
+  function playAudio() {
+    if (document.getElementById("poot")) {
+      let pootAudio = document.getElementById("poot");
+
+      if (pootAudio instanceof HTMLMediaElement) {
+        pootAudio.play();
+      }
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" onClick={() => playAudio()}>
+      <audio
+        id="poot"
+        preload="auto"
+        src="https://files.gamebanana.com/preview/sounds/hitsound_4.mp3"
+      ></audio>
     </div>
   );
-}
+};
 
 export default App;
