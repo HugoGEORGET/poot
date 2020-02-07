@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f31eb386.chunk.css",
+    "main.js": "/static/js/main.eca9e725.chunk.js",
+    "main.js.map": "/static/js/main.eca9e725.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c20f869d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c20f869d.js.map",
+    "static/js/2.645d252f.chunk.js": "/static/js/2.645d252f.chunk.js",
+    "static/js/2.645d252f.chunk.js.map": "/static/js/2.645d252f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.84a277f19559a75cdf3f50b8bcc91e93.js": "/precache-manifest.84a277f19559a75cdf3f50b8bcc91e93.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f31eb386.chunk.css.map": "/static/css/main.f31eb386.chunk.css.map",
+    "static/js/2.645d252f.chunk.js.LICENSE.txt": "/static/js/2.645d252f.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/pootis.2cbecf96.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c20f869d.js",
+    "static/js/2.645d252f.chunk.js",
+    "static/css/main.f31eb386.chunk.css",
+    "static/js/main.eca9e725.chunk.js"
+  ]
+}
