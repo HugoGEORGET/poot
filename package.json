@@ -1,5 +1,6 @@
 {
   "name": "poot",
+  "homepage": "https://hugogeorget.github.io/poot/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
