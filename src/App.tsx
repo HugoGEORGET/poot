@@ -14,11 +14,7 @@ const App = () => {
 
   return (
     <div className="App" onClick={() => playAudio()}>
-      <audio
-        id="poot"
-        preload="auto"
-        src="https://files.gamebanana.com/preview/sounds/hitsound_4.mp3"
-      ></audio>
+      <audio id="poot" preload="auto" src="./poot.mp3"></audio>
     </div>
   );
 };
