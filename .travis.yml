@@ -10,5 +10,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   local_dir: build
+  fqdn: www.poot.fr
   on:
     branch: master
