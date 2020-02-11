@@ -1,6 +1,6 @@
 html,
 body {
-  cursor: url("./pootis.png") 2 2, pointer;
+  cursor: pointer;
   background: url("./poootis.png");
 }
 
