@@ -19,21 +19,27 @@ const App = () => {
           let pootImage = new Image();
           pootImage.src = "./pootis.png";
           pootImage.onload = () => {
-            canvasContext?.drawImage(pootImage, x, y);
+            canvasContext?.drawImage(pootImage, x - 50, y - 50);
           };
         };
 
         let playPootSound = () => {
-          let pootSound = new Audio('./poot.mp3');
+          let pootSound = new Audio("./poot.mp3");
           pootSound.play();
-        }
+        };
 
         let mousedownEvent = (event: MouseEvent) => {
           addImage(event);
           playPootSound();
-        }
+        };
 
         canvas.addEventListener("mousedown", mousedownEvent);
+        window.addEventListener("resize", () => {
+          if (canvasContext instanceof CanvasRenderingContext2D) {
+            canvasContext.canvas.width = window.innerWidth;
+            canvasContext.canvas.height = window.innerHeight;
+          }
+        });
       }
     }
   }, []);
