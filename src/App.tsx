@@ -13,7 +13,6 @@ const App = () => {
         canvasContext.canvas.height = window.innerHeight;
 
         let addImage = (event: MouseEvent) => {
-          console.log("addImage");
           let x = event.clientX;
           let y = event.clientY;
 
@@ -24,24 +23,23 @@ const App = () => {
           };
         };
 
-        canvas.addEventListener("mousedown", addImage);
+        let playPootSound = () => {
+          let pootSound = new Audio('./poot.mp3');
+          pootSound.play();
+        }
+
+        let mousedownEvent = (event: MouseEvent) => {
+          addImage(event);
+          playPootSound();
+        }
+
+        canvas.addEventListener("mousedown", mousedownEvent);
       }
     }
   }, []);
 
-  function playAudio() {
-    if (document.getElementById("poot")) {
-      let pootAudio = document.getElementById("poot");
-
-      if (pootAudio instanceof HTMLMediaElement) {
-        pootAudio.play();
-      }
-    }
-  }
-
   return (
-    <div className="App" onClick={() => playAudio()}>
-      <audio id="poot" preload="auto" src="./poot.mp3"></audio>
+    <div className="App">
       <canvas id="canvas"></canvas>
     </div>
   );
