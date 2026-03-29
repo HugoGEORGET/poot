@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import "./App.css";
 
 const addImageToCanvas = (event: MouseEvent, canvasContext: CanvasRenderingContext2D) => {
-  let x = event.clientX;
-  let y = event.clientY;
+  const x = event.clientX;
+  const y = event.clientY;
 
-  let pootImage = new Image();
+  const pootImage = new Image();
   pootImage.src = "pootis.png";
   pootImage.onload = () => {
     canvasContext?.drawImage(pootImage, x - 50, y - 50);
