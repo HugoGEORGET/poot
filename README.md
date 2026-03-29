@@ -1,7 +1,5 @@
 # Poot
 
-[![Build Status](https://travis-ci.org/HugoGEORGET/poot.svg?branch=master)](https://travis-ci.org/HugoGEORGET/poot)
-
 *Pootis !*
 
 Point & poot webpage.
